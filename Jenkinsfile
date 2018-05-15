@@ -5,9 +5,6 @@ pipeline {
   	NODE_VER = '8.1.0'
   }
 
-  post {
-
-  }
 
   stages {
     stage('Beginning') { agent any
