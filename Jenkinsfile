@@ -1,8 +1,16 @@
 pipeline {
   agent none
+  
   environment {
   	NODE_VER = '8.1.0'
   }
+
+  post {
+  	success {
+  		'echo successful'
+  	}
+  }
+
   stages {
     stage('Beginning') { agent any
     	environment {
@@ -17,7 +25,7 @@ pipeline {
 
     stage('Who Am I?') { agent any
     	environment {
-    		DEPLOY_VERSION = '8.1.0'
+    		DEPLOY_VERSION = 'prod'
     	}
     	steps {
     		echo "${env.NEW_VAR}"
