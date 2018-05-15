@@ -6,9 +6,7 @@ pipeline {
   }
 
   post {
-  	success {
-  		
-  	}
+  	
   }
 
   stages {
