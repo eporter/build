@@ -20,7 +20,7 @@ pipeline {
 
     stage('Who Am I?') { agent any
     	environment {
-    		DEPLOY_VERSION = 'prod'
+    		DEPLOY_VERSION = 'stage'
     	}
     	steps {
     		echo "${env.NEW_VAR}"
